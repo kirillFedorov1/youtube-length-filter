@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const value = parseInt(minInput.value, 10);
 
     if (!Number.isFinite(value) || value < 0) {
-      statusEl.textContent = 'Введите неотрицательное число';
+      statusEl.textContent = 'Please enter a non-negative number';
       return;
     }
 
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         autoTheater: autoTheaterInput.checked
       },
       () => {
-        statusEl.textContent = 'Сохранено';
+        statusEl.textContent = 'Saved';
         setTimeout(() => {
           statusEl.textContent = '';
         }, 1500);
